@@ -1,2 +1,0 @@
-yeah = 'yeah'
-indeed = 'indeed'
