@@ -56,11 +56,11 @@ def fiverounder(x):
     return y
 
 # SemanticSpace = 'Francais-Contes-Total 	 (300 factors)'
-SemanticSpace = 'Francais-Livre 	 (300 factors)'
+# 'Francais-Livre 	 (300 factors)'
 # 'Francais-Livres3 	 (100 factors)'
 # 'Francais-Monde 	 (300 factors)'
 # 'Francais-Monde-Extended 	 (300 factors)'
-# 'Francais-Psychology 	 (300 factors)'
+# SemanticSpace = 'Francais-Psychology 	 (300 factors)'
 
 def unicodecleaner(L):
     Q = []
