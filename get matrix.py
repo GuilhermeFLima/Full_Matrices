@@ -55,7 +55,7 @@ def fiverounder(x):
     y = n*5
     return y
 
-# SemanticSpace = 'Francais-Contes-Total 	 (300 factors)'
+SemanticSpace = 'Francais-Contes-Total 	 (300 factors)'
 # 'Francais-Livre 	 (300 factors)'
 # 'Francais-Livres3 	 (100 factors)'
 # 'Francais-Monde 	 (300 factors)'
