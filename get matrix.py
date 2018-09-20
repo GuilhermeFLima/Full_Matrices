@@ -72,13 +72,8 @@ def unicodecleaner(L):
     return Q
 
 def matrix(wordlist, semspace):
-    # first take out problematic special characters
-    # such as \u0153
-    # L = unicodecleaner(wordlist)
-    # L = [ x.decode('utf8') for x in L]
-
-    L = wordlist
-    L = [unicode(x, 'utf8') for x in L]
+    L = [unicode(x, 'utf8') for x in wordlist]
+    L = unicodecleaner(L)
     L = [x.encode('latin1') for x in L]
 
     br = mechanize.Browser()
