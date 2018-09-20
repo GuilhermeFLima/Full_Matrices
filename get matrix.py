@@ -2,9 +2,9 @@ import csv
 
 from math import ceil
 
-import sys
-reload(sys)
-sys.setdefaultencoding('latin1')
+# import sys
+# reload(sys)
+# sys.setdefaultencoding('latin1')
 
 import mechanize
 from BeautifulSoup import BeautifulSoup
@@ -74,8 +74,12 @@ def unicodecleaner(L):
 def matrix(wordlist, semspace):
     # first take out problematic special characters
     # such as \u0153
-    L = unicodecleaner(wordlist)
-    L = [ x.decode('utf8') for x in L]
+    # L = unicodecleaner(wordlist)
+    # L = [ x.decode('utf8') for x in L]
+
+    L = wordlist
+    L = [unicode(x, 'utf8') for x in L]
+    L = [x.encode('latin1') for x in L]
 
     br = mechanize.Browser()
     br.open('http://lsa.colorado.edu/cgi-bin/LSA-matrix.html')
